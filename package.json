@@ -1,0 +1,29 @@
+{
+  "name": "wrx",
+  "version": "3.0.0",
+  "private": true,
+  "description": "WRX — smart short links, QR codes and real-time analytics on the edge.",
+  "author": "Imrane Adli <imrane.adli.pro@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@9.14.2",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "pnpm --filter @wrx/web build:watch & pnpm --filter @wrx/api dev",
+    "dev:web": "pnpm --filter @wrx/web dev",
+    "dev:api": "pnpm --filter @wrx/api dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "e2e": "pnpm --filter @wrx/web e2e",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "db:migrate:local": "pnpm --filter @wrx/api db:migrate:local",
+    "deploy": "pnpm --filter @wrx/web build && pnpm --filter @wrx/api deploy"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "typescript": "^5.9.3"
+  }
+}

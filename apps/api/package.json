@@ -1,0 +1,29 @@
+{
+  "name": "@wrx/api",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local --port 8787",
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "db:migrate:local": "wrangler d1 migrations apply wrx --local",
+    "db:migrate:remote": "wrangler d1 migrations apply wrx --remote",
+    "deploy": "wrangler d1 migrations apply wrx --remote && wrangler deploy"
+  },
+  "dependencies": {
+    "@hono/swagger-ui": "^0.6.1",
+    "@wrx/shared": "workspace:*",
+    "hono": "^4.13.13",
+    "zod": "^4.3.3"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.22.0",
+    "@cloudflare/workers-types": "^5.20261001.1",
+    "typescript": "^5.9.3",
+    "vitest": "~4.1.0",
+    "wrangler": "^4.47.0"
+  }
+}
