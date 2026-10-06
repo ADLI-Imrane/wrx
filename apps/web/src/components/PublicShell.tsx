@@ -85,7 +85,7 @@ export function PublicShell() {
           {[
             { h: t('Product'), items: [[t('Smart routing'), '/#features'], [t('QR codes'), '/#features'], [t('Analytics'), '/#features']] },
             { h: t('Connect'), items: [[t('Discover'), '/discover'], [t('People'), '/discover?kind=person'], [t('Startups'), '/discover?kind=startup']] },
-            { h: t('Developers'), items: [[t('API reference'), '/api/v1/docs'], [t('Source code'), 'https://github.com/ADLI-Imrane/wrx-generator-v2']] },
+            { h: t('Developers'), items: [[t('API reference'), '/api/v1/docs'], [t('Source code'), 'https://github.com/ADLI-Imrane/wrx']] },
           ].map((col) => (
             <div key={col.h} className="grid content-start gap-2.5">
               <p className="text-[12.5px] font-medium text-fg">{col.h}</p>
@@ -99,7 +99,7 @@ export function PublicShell() {
         </div>
         <div className="mx-auto flex max-w-[1200px] items-center justify-between border-t border-line px-4 py-5 text-[12px] text-faint sm:px-8">
           <span>© {new Date().getFullYear()} WRX</span>
-          <a href="https://github.com/ADLI-Imrane/wrx-generator-v2" className="hover:text-fg">{t('Open source on GitHub')}</a>
+          <a href="https://github.com/ADLI-Imrane/wrx" className="hover:text-fg">{t('Open source on GitHub')}</a>
         </div>
       </footer>
     </div>

@@ -6,7 +6,7 @@
 
 **Smart short links, dynamic QR codes, real-time analytics — and a professional network built on top.**
 
-[![CI](https://github.com/ADLI-Imrane/wrx-generator-v2/actions/workflows/ci.yml/badge.svg)](https://github.com/ADLI-Imrane/wrx-generator-v2/actions/workflows/ci.yml)
+[![CI](https://github.com/ADLI-Imrane/wrx/actions/workflows/ci.yml/badge.svg)](https://github.com/ADLI-Imrane/wrx/actions/workflows/ci.yml)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)
 ![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers%20%2B%20D1-F38020?logo=cloudflare&logoColor=white)
 ![React 19](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
